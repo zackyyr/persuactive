@@ -1,0 +1,131 @@
+:root { 
+    --primary-color : #1d1d1d;
+    --secondary-color : #ffff;
+    --blue-bg : #0E1028;
+    --blue : #2B3EF4;
+    --red : #FF0000;
+}
+*{ 
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+body { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li { 
+    list-style-type: none;
+}
+a { 
+    text-decoration: none;
+}
+section { 
+    padding: 0.2% 5%;
+}
+/* Navbar Start */
+body { 
+    height: 300vh;
+}
+.header {
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.header.scrolled {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.337);
+}
+
+.navbar{ 
+    padding: 1.2% 5%;
+}
+.navbar-container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.nav-logo img { 
+    width: 150px;
+}
+.nav-link { 
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding: 0;
+}
+.nav-cta { 
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+.nav-link li a{ 
+    color: var(--secondary-color);
+    transition: all 0.2s ease;
+}
+.nav-link li a:hover {
+    color: var(--blue);
+}
+.nav-cta a{ 
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: 3em;
+    border: 1px solid var(--secondary-color);
+    transition: all 0.2s ease;
+}
+.nav-cta a:hover{
+    background-color: var(--blue);
+    color: var(--secondary-color);
+    border: 1px solid var(--blue);
+}
+.hamburger-menu { 
+    display: none;
+}
+.hamburger-menu button { 
+    color: var(--secondary-color);
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+@media (max-width:845px) { 
+    .hamburger-menu { 
+        display: flex;
+    }
+    .navbar { 
+        padding: 3%;
+    }
+    .nav-link { 
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        background-color: #fff;
+        flex-direction: column;
+        padding: 15px;
+        width: 150px;
+        align-items: flex-start;
+        border-radius: 15px;
+        position: absolute;
+        right: 10px;
+        gap: 2em;
+        display: none;
+    }
+    .nav-link.active {
+        display: flex;
+    }
+    .nav-link li a { 
+        color: #1d1d1d;
+    }
+}
+@media (max-width : 448px) {
+    .nav-logo img { 
+        width: 120px;
+    } 
+    .nav-cta { 
+        gap: 0em;
+    }
+    .nav-cta a { 
+        font-size: 12px;
+    }
+}
+/* Navbar End */
