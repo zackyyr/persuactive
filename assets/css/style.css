@@ -13,7 +13,6 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    height: 1300vh;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -39,7 +38,7 @@ section {
     background: radial-gradient(165.2% 165.2% at 50% -131.43%, #FFF 0%, #000 99.99%);
 }
 .navbar {
-    background-color: var(--primary-color);
+    background-color: #000;
     position: sticky;
     top: 0;
     z-index: 1000;

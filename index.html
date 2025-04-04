@@ -18,6 +18,7 @@
 
     <!-- CSS -->
      <link rel="stylesheet" href="/assets/css/style.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <!-- Favicon -->
     <link rel="icon" href="/assets/img/icon2.svg" type="image/x-icon">
@@ -29,6 +30,7 @@
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
     <main>
@@ -59,18 +61,17 @@
             <section class="hero">
                 <div class="hero-container">
                     <div class="hero-header">
-                        <div class="hero-tagline">
+                        <div class="hero-tagline" data-aos="fade-up" data-aos-delay="0">
                             <p>The Top 1% of Marketing Education</p>
                         </div>
-                        <h1 class="hero-heading">Marketing Bukan Soal Gimana Cara Ngiklan, <br> Tapi <span class="blue-gradient">Soal Psikologi Manusia.</span> </h1>
-                        <h3 class="hero-subheading">Karena marketing terbaik bukan yang paling rame, tapi yang paling nyambung ke pikiran audiens.</h3>
-                        <div class="hero-cta">
-
+                        <h1 class="hero-heading" data-aos="fade-up" data-aos-delay="300">Marketing Bukan Soal Gimana Cara Ngiklan, <br> Tapi <span class="blue-gradient">Soal Psikologi Manusia.</span> </h1>
+                        <h3 class="hero-subheading"data-aos="fade-up" data-aos-delay="500" >Karena marketing terbaik bukan yang paling rame, tapi yang paling nyambung ke pikiran audiens.</h3>
+                        <div class="hero-cta" data-aos="fade-up" data-aos-delay="800">
                             <a href="#">Belajar Sekarang</a>
                             <a href="#">Komunitas Marketer</a>
                         </div>
                     </div>
-                    <div class="hero-intro">
+                    <div class="hero-intro" data-aos="fade-up" data-aos-delay="1000">
                             <div class="hero-video-wrapper">
                                 <iframe 
                                 src="https://www.youtube.com/embed/DZAdVY9kKbc"
@@ -86,6 +87,10 @@
 
         </div>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="/assets/js/script.js"></script>
 </body>
 </html>
