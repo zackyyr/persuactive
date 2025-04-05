@@ -16,12 +16,7 @@
         }
     });
 
-    // Optional: auto close nav on link click (mobile)
-    document.querySelectorAll('.nav-link a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-        });
-    });
+
 
 
     window.addEventListener('scroll', () => {
